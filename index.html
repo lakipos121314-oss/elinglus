@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
 
     <title>D1screeeett Phooootoographss</title>
@@ -15,6 +16,101 @@
 
     <link rel="stylesheet" href="https://cdn.smrt-content.com/assets/1004/css/index.css">
     <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
+
+    <style>
+        /* Estilos responsivos de respaldo */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrap {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        .step-block {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 25px 15px;
+            border-radius: 12px;
+            color: #ffffff;
+            z-index: 10;
+        }
+
+        .question-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .buttons-block {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .step-btn {
+            display: inline-block;
+            min-width: 120px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .step-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Ajuste responsivo de la imagen de fondo */
+        #VideoBg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        @media (max-width: 480px) {
+            .question-title {
+                font-size: 1rem;
+            }
+            .step-btn {
+                width: 100%;
+                padding: 14px 0;
+            }
+        }
+    </style>
 
     <script type="text/javascript">
       (function() {
@@ -44,16 +140,16 @@
         }
       })();
     </script>
-<link rel="me" href="https://www.blogger.com/profile/11370574126181871540" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+    <link rel="me" href="https://www.blogger.com/profile/11370574126181871540" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+    <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head> 
-<body>        
+<body>     
+    <img src="https://i.imgur.com/xWe89EF.gif" id="VideoBg" alt="Background GIF" fetchpriority="high" loading="eager">
+
     <div class="layer"></div>        
     <div class="wrap">                
-        <div class="step-block">                        
-            <div class=" "><img src=" " alt=""></div>                        
-            
+        <div class="step-block">                                        
             <!-- Primera pregunta con opciones SÍ y NO -->
             <div class="step-item" id="step-1" style="display: block;">                                
                 <div class="question-title">I make house calls. Are you an adult?</div>                                
@@ -70,8 +166,6 @@
                     <a href="https://lasmedises.blogspot.com" class="step-btn submit-btn tr-submit-button showmail">ENTER</a>                                
                 </div>                        
             </div>
-
-            <img src="https://i.imgur.com/xWe89EF.gif" id="VideoBg" alt="Background GIF" fetchpriority="high" loading="eager">
         </div>        
     </div>        
 
